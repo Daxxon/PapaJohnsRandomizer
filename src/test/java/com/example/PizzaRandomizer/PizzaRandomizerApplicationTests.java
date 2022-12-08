@@ -74,8 +74,8 @@ class PizzaRandomizerApplicationTests {
 		loginButton.click();
 
 
-		/*String greeting = driver.findElement(By.xpath("//a[@class='popup-trigger' and contains(text(),\"Hi, \")]")).getText();
-		Assertions.assertTrue(greeting.contains("Hi, "));*/
+		String greeting = driver.findElement(By.xpath("//a[@class='popup-trigger' and contains(text(),\"Hi, \")]")).getText();
+		Assertions.assertTrue(greeting.contains("Hi, "));
 
 		//Close the browser
 		driver.close();
